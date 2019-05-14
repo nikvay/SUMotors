@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rel_emp_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_emp_report"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_h_reports" />
+
+            <TextView
+                android:id="@+id/tv_emp_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_emp_report"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Employee"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_leave_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_leave_reports"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_h_reports" />
+
+            <TextView
+                android:id="@+id/tv_leave_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_leave_reports"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Leave"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rel_attendance_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_attendance_report"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_h_reports" />
+
+            <TextView
+                android:id="@+id/tv_attendance_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_attendance_report"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Attendance"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_salary_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_salary_reports"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_h_reports" />
+
+            <TextView
+                android:id="@+id/tv_salary_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_salary_reports"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Salary"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rel_pf_tds_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_pf_tds_report"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vector_h_reports" />
+
+            <TextView
+                android:id="@+id/tv_pf_tds_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_pf_tds_report"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="PF,TDS,ESIC"
+                android:textColor="@color/txt_color_white"
+                android:textSize="@dimen/txt_size_17" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

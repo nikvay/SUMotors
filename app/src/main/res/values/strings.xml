@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SU Motors</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+</resources>

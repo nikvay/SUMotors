@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_them_new">
+
+    <RelativeLayout
+        android:id="@+id/rel_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_toolBar_color"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_vector_back_white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_back"
+            android:padding="5dp"
+            android:text="HRMS"
+            android:textColor="@color/txt_color_white"
+            android:textSize="@dimen/txt_size_20" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_emp_dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/rel_actionbar"
+        android:background="@color/white"
+        android:padding="@dimen/padding_5">
+
+        <View android:layout_width="1dp"
+            android:background="@color/update_date_color"
+            android:layout_height="match_parent"/>
+
+        <Spinner
+            android:id="@+id/spinner_emp_dept"
+            android:layout_width="wrap_content"
+            android:popupBackground="@color/txt_color_skye_blue"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5" />
+
+        <View android:layout_width="1dp"
+            android:background="@color/update_date_color"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_hrms_emp_dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_emp_dept" />
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_empty_list"
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_15"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/app_empty_list" />
+
+</RelativeLayout>
